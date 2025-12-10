@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Feed Ghana Poultry Farm</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; background:#f5f5f5; color:#222; }
+  header { background:#006400; color:#fff; padding:18px; position:relative; text-align:center; }
+  .ghana-flag { position:absolute; right:12px; top:8px; width:56px; }
+  .container { max-width:980px; margin:18px auto; padding:12px; }
+  h1,h2,h3{margin:0 0 10px 0; color:#006400;}
+  .price-card { background:#fff; border-radius:8px; padding:12px; display:flex; gap:12px; align-items:center; box-shadow:0 2px 6px rgba(0,0,0,0.08); margin-bottom:12px; }
+  .egg { width:110px; height:84px; display:block; border-radius:6px; border:1px solid #e6e6e6; background:#fff; box-sizing:border-box; padding:6px; }
+  .price-card .text { font-size:18px; font-weight:700; }
+  .info { background:#fff; padding:12px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.06); margin-top:12px;}
+  .map { width:100%; height:320px; border-radius:8px; border:1px solid #ccc; margin-top:12px; overflow:hidden;}
+  .whatsapp-btn { display:block; width:92%; max-width:420px; margin:18px auto; background:#25D366; color:#fff; text-align:center; padding:14px; border-radius:8px; text-decoration:none; font-weight:700; box-shadow:0 3px 8px rgba(0,0,0,0.12); }
+  footer { text-align:center; color:#666; padding:18px; margin-top:18px; }
+  @media (max-width:600px){ .price-card{flex-direction:row} .egg{width:90px;height:70px} }
+  /* small decorative SVG wrapper centering */
+  .egg svg { width:100%; height:100%; display:block; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Feed Ghana Poultry Farm</h1>
+  <img class="ghana-flag" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg" alt="Ghana flag">
+</header>
+
+<div class="container">
+  <h2>Fresh Egg Price List</h2>
+
+  <!-- Small -->
+  <div class="price-card">
+    <div class="egg" aria-hidden="true">
+      <!-- Inline SVG egg placeholder -->
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Small eggs">
+        <rect width="100%" height="100%" fill="#fff"/>
+        <ellipse cx="100" cy="75" rx="55" ry="70" fill="#fff7e6" stroke="#e6c07a" stroke-width="6"/>
+        <text x="100" y="78" font-family="Arial, sans-serif" font-size="18" fill="#a6762a" text-anchor="middle">Small</text>
+      </svg>
+    </div>
+    <div class="text">Small — ¢31 per crate</div>
+  </div>
+
+  <!-- Medium -->
+  <div class="price-card">
+    <div class="egg" aria-hidden="true">
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Medium eggs">
+        <rect width="100%" height="100%" fill="#fff"/>
+        <ellipse cx="100" cy="72" rx="60" ry="74" fill="#fff3e0" stroke="#d9a85f" stroke-width="6"/>
+        <text x="100" y="78" font-family="Arial, sans-serif" font-size="18" fill="#8a5a2a" text-anchor="middle">Medium</text>
+      </svg>
+    </div>
+    <div class="text">Medium — ¢33 per crate</div>
+  </div>
+
+  <!-- Large -->
+  <div class="price-card">
+    <div class="egg" aria-hidden="true">
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Large eggs">
+        <rect width="100%" height="100%" fill="#fff"/>
+        <ellipse cx="100" cy="74" rx="64" ry="78" fill="#fff0d9" stroke="#c98f40" stroke-width="6"/>
+        <text x="100" y="78" font-family="Arial, sans-serif" font-size="18" fill="#7a4f20" text-anchor="middle">Large</text>
+      </svg>
+    </div>
+    <div class="text">Large — ¢35 per crate</div>
+  </div>
+
+  <!-- Jumbo -->
+  <div class="price-card">
+    <div class="egg" aria-hidden="true">
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jumbo eggs">
+        <rect width="100%" height="100%" fill="#fff"/>
+        <ellipse cx="100" cy="74" rx="70" ry="82" fill="#fff0c8" stroke="#b86f2b" stroke-width="6"/>
+        <text x="100" y="78" font-family="Arial, sans-serif" font-size="18" fill="#653f16" text-anchor="middle">Jumbo</text>
+      </svg>
+    </div>
+    <div class="text">Jumbo — ¢38 per crate</div>
+  </div>
+
+  <!-- Double Yolk -->
+  <div class="price-card">
+    <div class="egg" aria-hidden="true">
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Double yolk eggs">
+        <rect width="100%" height="100%" fill="#fff"/>
+        <ellipse cx="75" cy="74" rx="45" ry="60" fill="#fff6e0" stroke="#e0b05a" stroke-width="5"/>
+        <ellipse cx="125" cy="74" rx="45" ry="60" fill="#fff6e0" stroke="#e0b05a" stroke-width="5"/>
+        <circle cx="80" cy="72" r="12" fill="#ffd24d"/>
+        <circle cx="120" cy="72" r="12" fill="#ffd24d"/>
+        <text x="100" y="120" font-family="Arial, sans-serif" font-size="14" fill="#8a5a2a" text-anchor="middle">Double Yolk</text>
+      </svg>
+    </div>
+    <div class="text">Double Yolk — ¢41 per crate</div>
+  </div>
+
+  <div class="info">
+    <h3>Order & Delivery Info</h3>
+    <p>📦 Delivery every <strong>2 days</strong></p>
+    <p>💰 Existing customers: <strong>Payment on delivery</strong></p>
+    <p>🆕 New customers: <strong>Payment before delivery</strong></p>
+  </div>
+
+  <h3 style="margin-top:16px">Find Us</h3>
+  <div class="map">
+    <!-- OpenStreetMap embed - no API key needed -->
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-0.858083%2C9.214453%2C-0.838083%2C9.234453&amp;layer=mapnik&amp;marker=9.224453,-0.848083">
+    </iframe>
+  </div>
+
+  <a class="whatsapp-btn" href="https://wa.me/233202873382" target="_blank">
+    Chat & Order on WhatsApp
+  </a>
+
+  <footer>
+    © 2025 Feed Ghana Poultry Farm — 0202873382
+  </footer>
+</div>
+</body>
+</html>
